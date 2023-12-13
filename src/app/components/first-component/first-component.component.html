@@ -1,0 +1,13 @@
+<div class="cp">
+  <div>
+    <p>Meu primeiro componente.</p>
+    <p>Valor numérico: {{ valorNumerico }}</p>
+    <p>Valor texto: {{ valorTexto }}</p>
+    <p>Valor Objeto: nome: {{ valorObjeto.nome }} e idade: {{ valorObjeto.idade }}</p>
+    <p>Valor vetor: {{ valorVetor[0] }} {{ valorVetor[1] }} ou {{ valorVetor }}</p>
+  </div>
+</div>
+
+<div class="cp">
+  <app-address-list [enderecos]="enderecos"></app-address-list>
+</div>

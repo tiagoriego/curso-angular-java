@@ -1,0 +1,28 @@
+<div *ngIf="exibirEndereco; else enderecoVazio">
+  <p [ngStyle]="{'font-size': style.fontSize, 'color': style.fontColor}">Lista de Endereços</p>
+  <table>
+    <tr>
+      <th>#</th>
+      <th>Tipo</th>
+      <th>Logradouro</th>
+      <th>Bairro</th>
+      <th>Cep</th>
+      <th>Cidade</th>
+      <th>Estado</th>
+    </tr>
+
+    <tr *ngFor="let endereco of enderecos; index as i" [ngClass]="{'striped': ((i+1) % 2 == 0)}">
+      <td>{{ i+1 }}</td>
+      <td>{{ endereco.tipoLogradouro }}</td>
+      <td>{{ endereco.logradouro }}</td>
+      <td>{{ endereco.bairro }}</td>
+      <td>{{ endereco.cep }}</td>
+      <td>{{ endereco.cidade }}</td>
+      <td>{{ endereco.estado }}</td>
+    </tr>
+
+  </table>
+</div>
+<ng-template #enderecoVazio>
+  <p>Não há registros de endereços</p>
+</ng-template>
