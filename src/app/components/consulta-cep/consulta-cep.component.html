@@ -1,0 +1,14 @@
+<div class="cp">
+  <label for=""></label> <input type="text" name="cep" [(ngModel)]="cep" />
+  <button (click)="onConsultarCep()">Consultar CEP</button>
+  <div [hidden]="cepConsultado == null">
+    <p>Endereço {{ cepConsultado?.address }}</p>
+    <p>Bairro {{ cepConsultado?.district }}</p>
+    <p>CEP {{ cepConsultado?.cep }}</p>
+    <p>Cidade {{ cepConsultado?.city }}</p>
+    <p>Estado {{ cepConsultado?.state }}</p>
+  </div>
+  <div [hidden]="!falhaNaConsulta">
+    Ocorreu uma falha na consulta.
+  </div>
+</div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Endereco } from 'src/app/interfaces/Endereco';
 
 @Component({
   selector: 'app-first-component',
@@ -14,7 +15,7 @@ export class FirstComponentComponent {
   }
   valorVetor = ["...", 1, 2];
 
-  enderecos = [
+  enderecos: Endereco[] = [
     {
       tipoLogradouro: "rua",
       logradouro: "bartolomeu cordovil",

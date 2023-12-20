@@ -1,14 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-
-type endereco = {
-  tipoLogradouro: string
-  logradouro: string
-  bairro: string
-  cep: string
-  cidade: string
-  estado: string
-}
-
+import { Endereco } from 'src/app/interfaces/Endereco';
 
 @Component({
   selector: 'app-address-list',
@@ -16,7 +7,7 @@ type endereco = {
   styleUrls: ['./address-list.component.css']
 })
 export class AddressListComponent implements OnInit {
-  @Input() enderecos: endereco[] = [];
+  @Input() enderecos: Endereco[] = [];
   style = {
     fontColor: "red",
     fontSize: "25px"

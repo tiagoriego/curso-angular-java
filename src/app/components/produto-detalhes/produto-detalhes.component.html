@@ -1,0 +1,17 @@
+<div class="cp">
+  <p><a routerLink="/produtos">Voltar</a></p>
+
+  <div *ngIf="produto; else produtoNaoLocalizado">
+    <ul>
+      <li>Id: {{ produto.id }}</li>
+      <li>Nome: {{ produto.nome }}</li>
+      <li>Descrição: {{ produto.descricao }}</li>
+      <li>Valor: {{ produto.valor | currency : "R$" }}</li>
+    </ul>
+  </div>
+
+  <ng-template #produtoNaoLocalizado>
+    <p>Produto não localizado. <br>
+        Id do produto: {{ idProduto }}</p>
+  </ng-template>
+</div>

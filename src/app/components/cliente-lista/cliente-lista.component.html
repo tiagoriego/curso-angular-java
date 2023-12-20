@@ -1,0 +1,15 @@
+<app-cliente (adicionarCliente)="onAdicionarCliente($event)"></app-cliente>
+<div class="cp">
+  <table>
+    <tr>
+      <th>id</th>
+      <th>nome</th>
+      <th>cpf</th>
+    </tr>
+    <tr *ngFor="let cliente of clientes">
+      <td>{{ cliente.id }}</td>
+      <td>{{ cliente.nome | titlecase }}</td>
+      <td>{{ cliente.cpf }}</td>
+    </tr>
+  </table>
+</div>

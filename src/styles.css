@@ -3,6 +3,10 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
+body {
+  margin-bottom: 100px;
+}
+
 .cp {
   border: 1px dotted red;
   padding: 5px;

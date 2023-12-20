@@ -1,0 +1,19 @@
+
+.form-field {
+    padding: 10px;
+}
+
+.form-field input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-field label {
+    margin-right: 10px;
+}
+
+
+
+
+

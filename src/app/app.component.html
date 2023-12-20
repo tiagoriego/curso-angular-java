@@ -1,6 +1,20 @@
-<div class="cp">
-  <h1>Olá mundo!</h1>
+<div>
+  <header>
+    Header
+  </header>
+  <nav>
+    <ul>
+      <li><a routerLink="">Home</a></li>
+      <li><a routerLink="/primeiro-componente">Primeiro Componente</a></li>
+      <li><a routerLink="/clientes">Clientes</a></li>
+      <li><a routerLink="/produtos">Produtos</a></li>
+      <li><a routerLink="/consulta-cep">Consulta CEP</a></li>
+    </ul>  
+  </nav>
 </div>
-<app-first-component></app-first-component>
-<app-first-event></app-first-event>
-<app-first-model></app-first-model>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<div>
+  <footer>Footer</footer>
+</div>
