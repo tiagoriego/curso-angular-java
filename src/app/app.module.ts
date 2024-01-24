@@ -8,13 +8,22 @@ import { HttpClientModule } from '@angular/common/http'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { ClienteCadastroComponent } from './components/cliente-cadastro/cliente-cadastro.component'
 import { BootstrapModule } from './modules/bootstrap/bootstrap.module';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CustomHeaderComponent } from './components/custom-header/custom-header.component';
+import { CustomFooterComponent } from './components/custom-footer/custom-footer.component';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component'
+import { HttpInterceptorProviders } from './interceptors/http-interceptor';
 
 @NgModule({
   declarations: [
     AppComponent,
     ClienteListaComponent,
-    ClienteCadastroComponent
+    ClienteCadastroComponent,
+    CustomHeaderComponent,
+    CustomFooterComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +34,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [HttpInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

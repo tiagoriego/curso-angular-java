@@ -18,5 +18,26 @@
       "telefone": "Tiago",
       "email": "tiago@teste.com"
     }
+  ],
+  "users": [
+    {
+      "email": "teste@teste.com",
+      "password": "$2a$10$hwmst4B8nArf76r0giESo.xm5qwmc4n8bgV9/4M5rpHs2WkZ3RNNW",
+      "name": "Usuário Teste",
+      "rules": [
+        1,
+        2
+      ],
+      "id": 1
+    },
+    {
+      "email": "teste2@teste.com",
+      "password": "$2a$10$o6Jl1O9BG.ZZeoMZFpXl7OQWfe.ql4BTOXrPHsjnZIU0hPoDqZkNW",
+      "name": "Usuário Teste 2",
+      "rules": [
+        1
+      ],
+      "id": 2
+    }
   ]
 }
