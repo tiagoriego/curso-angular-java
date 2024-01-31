@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LoginComponent } from './login.component';
 import { LoginService } from 'src/app/services/login.service';
-import { HttpClient, HttpHandler } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 describe('LoginComponent', () => {
@@ -11,9 +11,9 @@ describe('LoginComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [FormsModule, ReactiveFormsModule],
+      imports: [FormsModule, ReactiveFormsModule, HttpClientModule],
       declarations: [LoginComponent],
-      providers: [LoginService, HttpClient, HttpHandler],
+      providers: [LoginService],
     });
     fixture = TestBed.createComponent(LoginComponent);
     component = fixture.componentInstance;

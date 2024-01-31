@@ -53,4 +53,8 @@ export class LoginService {
   getRules(id: string): Observable<User> {
     return this.httpClient.get<User>(`${this.baseUrl}/users/${id}`)
   }
+
+  logout(): void {
+    localStorage.clear()
+  }
 }

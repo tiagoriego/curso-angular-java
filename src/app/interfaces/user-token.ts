@@ -6,6 +6,6 @@ export interface AccessToken {
 export interface User {
   email: string;
   name: string;
-  rules: [number];
+  rules: number[];
   id: number;
 }
