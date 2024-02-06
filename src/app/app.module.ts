@@ -14,6 +14,10 @@ import { CustomFooterComponent } from './components/custom-footer/custom-footer.
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component'
 import { HttpInterceptorProviders } from './interceptors/http-interceptor';
+import { DestaqueDirective } from './directives/destaque.directive';
+import { UserDirective } from './directives/user.directive';
+import { ListFilterPipe } from './pipes/list-filter.pipe';
+import { PhonePipe } from './pipes/phone.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { HttpInterceptorProviders } from './interceptors/http-interceptor';
     CustomHeaderComponent,
     CustomFooterComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    DestaqueDirective,
+    UserDirective,
+    ListFilterPipe,
+    PhonePipe
   ],
   imports: [
     BrowserModule,

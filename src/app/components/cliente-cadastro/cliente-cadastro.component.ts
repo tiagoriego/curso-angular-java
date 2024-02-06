@@ -40,7 +40,7 @@ export class ClienteCadastroComponent {
   onSaveCadastroCliente(): void {
     const cliente: Partial<Cliente> = {
       nome: this.nome?.value,
-      telefone: this.nome?.value,
+      telefone: this.telefone?.value,
       email: this.email?.value
     }
 
