@@ -18,6 +18,8 @@ import { DestaqueDirective } from './directives/destaque.directive';
 import { UserDirective } from './directives/user.directive';
 import { ListFilterPipe } from './pipes/list-filter.pipe';
 import { PhonePipe } from './pipes/phone.pipe';
+import { AcessoNegadoComponent } from './components/acesso-negado/acesso-negado.component';
+import { ClienteEditarComponent } from './components/cliente-editar/cliente-editar.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { PhonePipe } from './pipes/phone.pipe';
     DestaqueDirective,
     UserDirective,
     ListFilterPipe,
-    PhonePipe
+    PhonePipe,
+    AcessoNegadoComponent,
+    ClienteEditarComponent
   ],
   imports: [
     BrowserModule,

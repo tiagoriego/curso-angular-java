@@ -17,7 +17,7 @@ describe('LoginService', () => {
     name: 'Teste',
     email: 'teste@teste.com',
     id: 1,
-    rules: [1, 2],
+    rules: [''],
   };
   let mockAccessToken: AccessToken = {
     accessToken:

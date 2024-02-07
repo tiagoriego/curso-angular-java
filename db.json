@@ -1,22 +1,16 @@
 {
   "cliente": [
     {
-      "id": "37c7",
-      "nome": "Pedro Silva",
-      "telefone": "11 22225555",
-      "email": "pedro@silva.com"
+      "nome": "Jose Silva e Silva",
+      "telefone": "1122559988",
+      "email": "jose@silva.com.br",
+      "id": 1
     },
     {
-      "id": "ab09",
-      "nome": "Jose Silva",
-      "telefone": "11 33335555",
-      "email": "jose@silva.com"
-    },
-    {
-      "nome": "Pedro Silva",
-      "telefone": "11966665522",
-      "email": "pedro@silva.com",
-      "id": "Lnb9lD8"
+      "nome": "Pedro da Silva",
+      "telefone": "1122558899",
+      "email": "pedro@abc.com.br",
+      "id": 2
     }
   ],
   "users": [
@@ -25,8 +19,10 @@
       "password": "$2a$10$hwmst4B8nArf76r0giESo.xm5qwmc4n8bgV9/4M5rpHs2WkZ3RNNW",
       "name": "Usuário Teste",
       "rules": [
-        1,
-        2
+        "CADASTRAR_CLIENTE",
+        "EXCLUIR_CLIENTE",
+        "EDITAR_CLIENTE",
+        "LISTAR_CLIENTE"
       ],
       "id": 1
     },
@@ -35,7 +31,7 @@
       "password": "$2a$10$o6Jl1O9BG.ZZeoMZFpXl7OQWfe.ql4BTOXrPHsjnZIU0hPoDqZkNW",
       "name": "Usuário Teste 2",
       "rules": [
-        1
+        "LISTAR_CLIENTE"
       ],
       "id": 2
     }
